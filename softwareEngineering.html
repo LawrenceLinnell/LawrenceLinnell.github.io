@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<!--
+	Lawrence Linnell ePortfolio
+-->
+<html>
+	<head>
+		<title>Software Design & Engineering</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href= "mailto: lawrence.linnell@SNHU.edu" class="logo">Lawrence Linnell</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li class="active"><a href="softwareEngineering.html">Software Design & Engineering</a></li>
+							<li><a href="algorithmDataStructures.html">Algorithms & Data Structures</a></li>
+							<li><a href="Databases.html">Databases</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Software Design & Engineering</h1>
+									<p style="text-align:justify">&emsp;To showcase my ability to enhance the applications functionality and improve the user
+										    experience I designed and implemented a direct search algorithm for a given cruise
+										    ship, passenger, or active cruise.  If the given information is not in the system,
+										    then a “Not in database” message will display on the terminal.  This functionality
+										    directly improves the effectiveness and efficiency of the application to quickly
+										    report information within the database without the need for the user to manually
+										    search for information.</pstyle>
+									<p style="text-align:justify">&emsp;Other improvements to the application include renaming Driver.java to LuxuryCruiseLine.Java
+										    making it a more meaningful description of the program as well as reducing the length of the
+										    main driver class by creating four new classes: ShipList.java, CruisList.java,
+										    PassengerList.java and ValidInput.java.  Methods from the driver class were moved to one
+										    of these new classes based on their respective functionality making the code more reusable,
+										    easier to read and debug if necessary.  Comments were added to explain each class and
+										    method.  All indentation was updated to ensure uniformity.  All variables were converted
+										    to camel case as well as given more meaningful names.  These enhancements help to
+										    showcase my ability to upgrade legacy code to modern coding standards and improve
+										    code reusability.</pstyle>
+									<p style="text-align:justify">&emsp;With these enhancements I was able to meet the course objectives as planned in module one.
+										    However, after further inspection, I have also decided to enhance this application further
+											by implementing file input and output.  This enhancement will allow the user to update and
+											store data to the local file system.  At this time, the application relies on hard coded
+											data to operate but will accept new input.  Any new input added will be erased upon exiting
+											the application which does not provide much value to the user.</pstyle>
+									<p style="text-align:justify">&emsp;One issue I ran into while enhancing the Luxury Cruise Line
+										    application to expand its functionality with a direct search feature was using the compareTo()
+										    function within the for loop conditional statement.  I received an error that an integer could
+										    not be converted to a Boolean.  The mistake that I was making was that I was only comparing
+										    the strings which returns a -1, 0 or 1 depending whether the strings were less than, equal
+											or greater then each other in terms of their lexicographic order.  To resolve this, the
+										    conditional statement was adjusted to compare the return value of the string comparison
+										    to zero.  This would then return either a true if the strings were the same or a false 
+										    if they were different.</pstyle>
+								    <p style="text-align:justify">&emsp;Another issue I discovered while enhancing the application was
+										    that it is not always that easy to find a class for new code.  For instance, the switch statement
+										    that handles the processing of the menu option for the direct search feature contains a nested
+										    switch statement to handle the user input based on what they are searching for.  Since this
+										    functionality was directly related to menu processing, I decided to leave this code within
+										    the switch statement.  However, the functionality that is associated to searching for a cruise,
+										    ship or passenger was implemented within their respective classes.</pstyle>
+								</header>
+								<a href="assets/Skilsets/softwareEngineering/EnhancedLuxuryCruiseJava.zip"><div class="image main"><img src="images/luxuryCruiseLineJava.jpg" alt="Click Here to Download the Enhanced Luxury Cruise Line Program" /></div></a>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+
+						</section>
+						<section class="split contact">
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">Lawrence.Linnell@SNHU.edu</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="#" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://lawrencelinnell.github.io/">Lawrence Linnell ePortfolio Hosted by GitHub</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
