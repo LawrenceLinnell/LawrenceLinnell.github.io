@@ -2,9 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
 
 /*
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	Lawrence Linnell ePortfolio
 */
 
 html, body, div, span, applet, object,
@@ -32,6 +30,13 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
+
+/*resize images by 50%*/
+img.resize {
+	max-width:50%;
+	max-height:50%;
+  }
+
 
 ol, ul {
 	list-style: none;
