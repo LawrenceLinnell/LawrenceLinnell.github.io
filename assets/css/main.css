@@ -35,8 +35,12 @@ body {
 img.resize {
 	max-width:50%;
 	max-height:50%;
-  }
+}
 
+img {
+	display: block;
+	margin: 0 auto;
+}
 
 ol, ul {
 	list-style: none;
@@ -158,6 +162,10 @@ input, select, textarea {
 		font-size: 1rem;
 		line-height: 2.375;
 	}
+
+	#center {  
+		text-align: center;  
+	} 
 
 	a {
 		-moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
